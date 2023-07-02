@@ -1,4 +1,4 @@
-# 蓝鲸硬件监控插件
+# 蓝鲸服务器硬件监控插件
 
 IPMI Exporter 是一种用于 Prometheus 监控系统的插件，它允许通过 IPMI（Intelligent Platform Management Interface）接口监控服务器的硬件指标和传感器数据。IPMI 是一种硬件管理接口，通常嵌入在服务器主板上，可以用于监控和远程管理服务器。
 
