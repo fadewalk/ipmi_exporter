@@ -1,0 +1,6 @@
+plugin_id: ipmi_exporter
+plugin_display_name: IPMI服务器硬件监控
+plugin_type: Exporter
+tag: 
+is_support_remote: True
+label: os

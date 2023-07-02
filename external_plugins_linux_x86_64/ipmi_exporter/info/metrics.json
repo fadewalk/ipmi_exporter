@@ -1,0 +1,283 @@
+[
+    {
+        "table_name": "power",
+        "table_desc": "电源",
+        "fields": [
+            {
+                "description": "电源状态",
+                "type": "double",
+                "monitor_type": "metric",
+                "unit": "none",
+                "name": "ipmi_chassis_power_state",
+                "is_diff_metric": false,
+                "is_active": true,
+                "source_name": "",
+                "dimensions": []
+            },
+            {
+                "description": "功率消耗当前瓦数",
+                "type": "double",
+                "monitor_type": "metric",
+                "unit": "none",
+                "name": "ipmi_dcmi_power_consumption_current_watts",
+                "is_diff_metric": false,
+                "is_active": true,
+                "source_name": "",
+                "dimensions": []
+            },
+            {
+                "description": "抓取持续时间",
+                "type": "double",
+                "monitor_type": "metric",
+                "unit": "none",
+                "name": "ipmi_scrape_duration_seconds",
+                "is_diff_metric": false,
+                "is_active": true,
+                "source_name": "",
+                "dimensions": []
+            }
+        ]
+    },
+    {
+        "table_name": "sys_info",
+        "table_desc": "系统信息",
+        "fields": [
+            {
+                "description": "bmc信息",
+                "type": "double",
+                "monitor_type": "metric",
+                "unit": "none",
+                "name": "ipmi_bmc_info",
+                "is_diff_metric": false,
+                "is_active": true,
+                "source_name": "",
+                "dimensions": [
+                    "system_firmware_version",
+                    "firmware_revision",
+                    "manufacturer_id"
+                ]
+            },
+            {
+                "description": "系统固件版本",
+                "type": "string",
+                "monitor_type": "dimension",
+                "unit": "none",
+                "name": "system_firmware_version",
+                "is_diff_metric": false,
+                "is_active": true,
+                "source_name": ""
+            },
+            {
+                "description": "固件版本",
+                "type": "string",
+                "monitor_type": "dimension",
+                "unit": "none",
+                "name": "firmware_revision",
+                "is_diff_metric": false,
+                "is_active": true,
+                "source_name": ""
+            },
+            {
+                "description": "制造商_id",
+                "type": "string",
+                "monitor_type": "dimension",
+                "unit": "none",
+                "name": "manufacturer_id",
+                "is_diff_metric": false,
+                "is_active": true,
+                "source_name": ""
+            }
+        ]
+    },
+    {
+        "table_name": "ipmi_sensor",
+        "table_desc": "传感器",
+        "fields": [
+            {
+                "description": "",
+                "type": "string",
+                "monitor_type": "dimension",
+                "unit": "none",
+                "name": "name2",
+                "is_diff_metric": false,
+                "is_active": true,
+                "source_name": "",
+                "dimensions": []
+            },
+            {
+                "description": "传感器状态",
+                "type": "double",
+                "monitor_type": "metric",
+                "unit": "none",
+                "name": "ipmi_sensor_state",
+                "is_diff_metric": false,
+                "is_active": true,
+                "source_name": "",
+                "dimensions": [
+                    "id",
+                    "name",
+                    "type"
+                ]
+            },
+            {
+                "description": "电流安培",
+                "type": "double",
+                "monitor_type": "metric",
+                "unit": "none",
+                "name": "ipmi_current_amperes",
+                "is_diff_metric": false,
+                "is_active": true,
+                "source_name": "",
+                "dimensions": [
+                    "id",
+                    "name"
+                ]
+            },
+            {
+                "description": "当前状态",
+                "type": "double",
+                "monitor_type": "metric",
+                "unit": "none",
+                "name": "ipmi_current_state",
+                "is_diff_metric": false,
+                "is_active": true,
+                "source_name": "",
+                "dimensions": [
+                    "-"
+                ]
+            },
+            {
+                "description": "风扇转速rpm",
+                "type": "double",
+                "monitor_type": "metric",
+                "unit": "none",
+                "name": "ipmi_fan_speed_rpm",
+                "is_diff_metric": false,
+                "is_active": true,
+                "source_name": "",
+                "dimensions": [
+                    "id",
+                    "name"
+                ]
+            },
+            {
+                "description": "风扇速度状态",
+                "type": "double",
+                "monitor_type": "metric",
+                "unit": "none",
+                "name": "ipmi_fan_speed_state",
+                "is_diff_metric": false,
+                "is_active": true,
+                "source_name": "",
+                "dimensions": [
+                    "id",
+                    "name"
+                ]
+            },
+            {
+                "description": "电源状态",
+                "type": "double",
+                "monitor_type": "metric",
+                "unit": "none",
+                "name": "ipmi_power_state",
+                "is_diff_metric": false,
+                "is_active": true,
+                "source_name": "",
+                "dimensions": [
+                    "id",
+                    "name"
+                ]
+            },
+            {
+                "description": "电源瓦",
+                "type": "double",
+                "monitor_type": "metric",
+                "unit": "none",
+                "name": "ipmi_power_watts",
+                "is_diff_metric": false,
+                "is_active": true,
+                "source_name": "",
+                "dimensions": [
+                    "id",
+                    "name"
+                ]
+            },
+            {
+                "description": "温度",
+                "type": "double",
+                "monitor_type": "metric",
+                "unit": "none",
+                "name": "ipmi_temperature_celsius",
+                "is_diff_metric": false,
+                "is_active": true,
+                "source_name": "",
+                "dimensions": [
+                    "id",
+                    "name"
+                ]
+            },
+            {
+                "description": "温度状态",
+                "type": "double",
+                "monitor_type": "metric",
+                "unit": "none",
+                "name": "ipmi_temperature_state",
+                "is_diff_metric": false,
+                "is_active": true,
+                "source_name": "",
+                "dimensions": [
+                    "id",
+                    "name"
+                ]
+            },
+            {
+                "description": "电压状态",
+                "type": "double",
+                "monitor_type": "metric",
+                "unit": "none",
+                "name": "ipmi_voltage_state",
+                "is_diff_metric": false,
+                "is_active": true,
+                "source_name": "",
+                "dimensions": [
+                    "id",
+                    "name"
+                ]
+            },
+            {
+                "description": "电压V",
+                "type": "double",
+                "monitor_type": "metric",
+                "unit": "none",
+                "name": "ipmi_voltage_volts",
+                "is_diff_metric": false,
+                "is_active": true,
+                "source_name": "",
+                "dimensions": [
+                    "id",
+                    "name"
+                ]
+            },
+            {
+                "description": "",
+                "type": "string",
+                "monitor_type": "dimension",
+                "unit": "none",
+                "name": "id",
+                "is_diff_metric": false,
+                "is_active": true,
+                "source_name": ""
+            },
+            {
+                "description": "",
+                "type": "string",
+                "monitor_type": "dimension",
+                "unit": "none",
+                "name": "type",
+                "is_diff_metric": false,
+                "is_active": true,
+                "source_name": ""
+            }
+        ]
+    }
+]

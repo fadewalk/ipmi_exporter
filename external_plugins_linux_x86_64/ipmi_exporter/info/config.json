@@ -1,0 +1,25 @@
+[
+    {
+        "default":"127.0.0.1",
+        "mode":"collector",
+        "type":"text",
+        "name":"host",
+        "description":"监听IP",
+        "visible":false
+    },
+    {
+        "default":"19290",
+        "mode":"collector",
+        "type":"text",
+        "name":"port",
+        "description":"监听端口",
+        "visible":false
+    },
+    {
+        "default":"${host}:${port}",
+        "mode":"opt_cmd",
+        "type":"text",
+        "name":"--web.listen-address",
+        "description":""
+    }
+]

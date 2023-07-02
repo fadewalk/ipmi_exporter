@@ -1,0 +1,29 @@
+name: ipmi_exporter
+version: "12.8"
+description: ipmi_exporter
+description_en: 服务器硬件监控
+label: os
+category: external
+auto_launch: false
+launch_node: all
+port_range: 9601,10000-65535
+upstream:
+  - bkmonitorbeat
+dependences:
+  gse_agent: "1.2.0"
+  bkmonitorbeat: "1.7.0"
+control:
+  start: "./start.sh"
+  stop: "./stop.sh"
+  restart: "./restart.sh"
+  version: "cat VERSION"
+  reload: "./reload.sh"
+  debug: "./debug.sh"
+config_templates:
+  - plugin_version: "*"
+    name: env.yaml
+    version: 12
+    file_path: etc
+    format: yaml
+    source_path: etc/env.yaml.tpl
+need_delegate: True
